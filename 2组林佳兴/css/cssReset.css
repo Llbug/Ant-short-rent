@@ -1,0 +1,18 @@
+body,h1,h2,h3,h4,ul,li,input,p{
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea, li, div, ul, h4{
+    font-family: "Hiragino Sans GB", Arial, Verdana, Tahoma,"微软雅黑" ;
+    font-size: 14px;
+}
+body{
+    background: #fff;
+    color: #777776;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

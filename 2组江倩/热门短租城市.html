@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>热门短租</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="热门短租城市-header.css">
+</head>
+<body>
+	<div class="header-jq">
+		<div class="asote"></div>
+				<ul class="nav_R">
+					<li style="margin-left:-215px;">
+							<img src="imgsjq/tel_green_icon.png" alt="">
+							<span>客服电话：</span>
+							400-028-6868
+					</li>
+					<li class="hover"><a href="javascript:void(0)">登录/注册</a></li>
+					<li id="saoA">
+						<div class="showinfo">
+							<a href="javascript:void(0)" >APP首单立减5元</a>
+							<div class="b-app-img head_pop " id="sao">
+								<span></span>
+								<img src="imgsjq/saoyisao.jpg" alt="">
+							</div>
+						</div>
+						
+					</li>
+					<li class="hover"><a href="javascript:void(0)">商旅合作</a></li>
+					<li><a href="javascript:void(0)" class="room-btn f16 t-center">免费发布房源</a></li>
+			   </ul>
+	</div>
+	<!-- 首页轮播 -->
+	<div class="banner_con" id="banner">
+		<div class="container-poa" >
+			<ul class="ck-slide-wrapper slideshow" id="pic">
+				<li class="fade in" style="z-index: 2;">
+					<a href="javascript:void(0)"><img src="imgsjq/goodlodgeunit.jpg" alt=""></a>
+				</li>
+				<li class="">
+					<a href="javascript:void(0)"><img src="imgsjq/BB7MHU7NN5RM5XUBVFVXXU3QQLQYEB.jpg" alt=""></a>
+				</li>
+			</ul>
+				<a href="javascript:void(0)" class="prev ck-prev" id="prev"></a>
+				<a href="javascript:void(0)" class="next ck-next" id="next"></a>
+		</div>
+			<!-- 时间选项卡 -->
+		<div class="time" style="z-index: 1999 ;">
+			<div class="time-nav">
+				<dl>
+					<dd class="bor-sr" id="btnLeft">
+						<input type="text" id="searchcityin" placeholder="城市、景点、商圈">
+					</dd>
+					<dd class="calendar_group" id="btnRight">
+						<input type="text" id="startenddate" value placeholder ="入住退房时间">
+					</dd>
+					<dd class="btn-search">
+						<input type="button" value="搜索" id="tosearchlist">
+					</dd>
+				</dl>
+				<!-- 列表时间弹框 -->
+				<div class="select-hotcity" id="alert1">
+					<ul class="select-title clearfix">
+						<li><a href="javascript:void(0)" class="selected">热门目的地</a></li>
+						<li><a href="javascript:void(0)">ABCD</a></li>
+						<li><a href="javascript:void(0)">EFGHJ</a></li>
+						<li><a href="javascript:void(0)">KLMN</a></li>
+						<li><a href="javascript:void(0)">PQRSTW</a></li>
+						<li><a href="javascript:void(0)">XYZ</a></li>
+					</ul>
+					<ul class="select-citycon clearfix">
+						<li><a href="javascript:void(0)">北京</a></li>
+						<li><a href="javascript:void(0)">青岛</a></li>
+						<li><a href="javascript:void(0)">上海</a></li>
+						<li><a href="javascript:void(0)">成都</a></li>
+						<li><a href="javascript:void(0)">杭州</a></li>
+						<li><a href="javascript:void(0)">秦皇岛</a></li>
+						<li><a href="javascript:void(0)">厦门</a></li>
+						<li><a href="javascript:void(0)">广州</a></li>
+						<li><a href="javascript:void(0)">大连</a></li>
+						<li><a href="javascript:void(0)">重庆</a></li>
+						<li><a href="javascript:void(0)">西安</a></li>
+						<li><a href="javascript:void(0)">三亚</a></li>
+						<li><a href="javascript:void(0)">深圳</a></li>
+						<li><a href="javascript:void(0)">威海</a></li>
+						<li><a href="javascript:void(0)">南京</a></li>
+						<li><a href="javascript:void(0)">武汉</a></li>
+						<li><a href="javascript:void(0)">苏州</a></li>
+						<li><a href="javascript:void(0)">天津</a></li>
+						<li><a href="javascript:void(0)">北海</a></li>
+						<li><a href="javascript:void(0)">烟台</a></li>
+						<li><a href="javascript:void(0)">哈尔滨</a></li>
+						<li><a href="javascript:void(0)">长沙</a></li>
+						<li><a href="javascript:void(0)">葫芦岛</a></li>
+						<li><a href="javascript:void(0)">沈阳</a></li>
+						<li><a href="javascript:void(0)">济南</a></li>
+						<li><a href="javascript:void(0)">昆明</a></li>
+						<li><a href="javascript:void(0)">日照</a></li>
+						<li><a href="javascript:void(0)">承德</a></li>
+						<li><a href="javascript:void(0)">郑州</a></li>
+						<li><a href="javascript:void(0)">营口</a></li>
+					</ul>
+					<div class="hotmore">温馨提示：支持中文/拼音/简拼输入</div>
+				</div>
+				<div class="index_list_calendar-box" id="alert2">
+					<div class="calendar-month paddingR10">
+						<div class="calendar-title width_274">
+							<h2 cury="2018" curm="7">2018-7</h2>
+							<ul class="calendar-week">
+								<li class="pink">日</li>
+								<li>一</li>
+								<li>二</li>
+								<li>三</li>
+								<li>四</li>
+								<li>五</li>
+								<li class="pink">六</li>
+							</ul>
+							<ul class="calendar-day">
+								<li class="line2 old " d="1" m="6" y="2018" w="0" today="0" ymd="2018-07-01">
+									<span>1</span>
+								</li>
+								<li class="line2 old " d="2" m="6" y="2018" w="1" today="0" ymd="2018-07-02"
+								><span>2</span>
+								</li>
+								<li class="line2 old " d="3" m="6" y="2018" w="2" today="0" ymd="2018-07-03">
+									<span>3</span>
+								</li>
+								<li class="line2 old " d="4" m="6" y="2018" w="3" today="0" ymd="2018-07-04">
+									<span>4</span>
+								</li>
+								<li class="line2 old " d="5" m="6" y="2018" w="4" today="0" ymd="2018-07-05">
+									<span>5</span>
+								</li>
+								<li class="line2 old " d="6" m="6" y="2018" w="5" today="0" ymd="2018-07-06">
+									<span>6</span>
+								</li>
+								<li class="line2 old " d="7" m="6" y="2018" w="6" today="0" ymd="2018-07-07">
+									<span>7</span>
+								</li>
+								<li class="line2 old " d="8" m="6" y="2018" w="0" today="0" ymd="2018-07-08">
+									<span>8</span>
+								</li>
+								<li class="line2 old " d="9" m="6" y="2018" w="1" today="0" ymd="2018-07-09">
+									<span>9</span>
+								</li>
+								<li class="line2 old " d="10" m="6" y="2018" w="2" today="0" ymd="2018-07-10">
+									<span>10</span>
+								</li>
+								<li class="line2 old " d="11" m="6" y="2018" w="3" today="0" ymd="2018-07-11">
+									<span>11</span>
+								</li>
+								<li class="line2 old " d="12" m="6" y="2018" w="4" today="0" ymd="2018-07-12">
+									<span>12</span>
+								</li>
+								<li class="line2 old " d="13" m="6" y="2018" w="5" today="0" ymd="2018-07-13">
+									<span>13</span>
+								</li>
+								<li class="line2 old " d="14" m="6" y="2018" w="6" today="0" ymd="2018-07-14">
+									<span>14</span>
+								</li>
+								<li class="line2 old " d="15" m="6" y="2018" w="0" today="0" ymd="2018-07-15">
+									<span>15</span>
+								</li>
+								<li class="line2 old " d="16" m="6" y="2018" w="1" today="0" ymd="2018-07-16">
+									<span>16</span>
+								</li>
+								<li class="line2 old " d="17" m="6" y="2018" w="2" today="0" ymd="2018-07-17">
+									<span>17</span>
+								</li>
+								<li class="line2 old " d="18" m="6" y="2018" w="3" today="0" ymd="2018-07-18">
+									<span>18</span>
+								</li>
+								<li class="line2 old " d="19" m="6" y="2018" w="4" today="0" ymd="2018-07-19">
+									<span>19</span>
+								</li>
+								<li class="line2 old " d="20" m="6" y="2018" w="5" today="0" ymd="2018-07-20">
+									<span>20</span>
+								</li>
+								<li class="line2 old " d="21" m="6" y="2018" w="6" today="0" ymd="2018-07-21">
+									<span>21</span>
+								</li>
+								<li class="line2 old " d="22" m="6" y="2018" w="0" today="0" ymd="2018-07-22">
+									<span>22</span>
+								</li>
+								<li class="line2 old " d="23" m="6" y="2018" w="1" today="0" ymd="2018-07-23">
+									<span>23</span>
+								</li>
+								<li class="line2 old " d="24" m="6" y="2018" w="2" today="0" ymd="2018-07-24">
+									<span>24</span>
+								</li>
+								<li class="line2 old " d="25" m="6" y="2018" w="3" today="0" ymd="2018-07-25">
+									<span>25</span>
+								</li>
+								<li class="line2 old " d="26" m="6" y="2018" w="4" today="0" ymd="2018-07-26">
+									<span>26</span>
+								</li>
+								<li class="line2 old " d="27" m="6" y="2018" w="5" today="0" ymd="2018-07-27">
+									<span>27</span>
+								</li>
+								<li class="line2 show-date " d="28" m="6" y="2018" w="6" today="1" ymd="2018-07-28">
+									<span>今天</span>
+								</li>
+								<li class="line2 show-date " d="29" m="6" y="2018" w="0" today="0" ymd="2018-07-29">
+									<span>29</span>
+								</li>
+								<li class="line2 show-date " d="30" m="6" y="2018" w="1" today="0" ymd="2018-07-30">
+									<span>30</span>
+								</li>
+								<li class="line2 show-date " d="31" m="6" y="2018" w="2" today="0" ymd="2018-07-31">
+									<span>31</span>
+								</li>
+								<li class="old line2"></li>
+								<li class="old line2"></li>
+								<li class="old line2"></li>
+								<li class="old line2"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="calendar-month">
+						<div class="calendar-title">
+							<h2 cury="2018" curm="8">2018-8</h2>
+						</div>
+						<ul class="calendar-week">
+							<li class="pink">日</li>
+							<li>一</li>
+							<li>二</li>
+							<li>三</li>
+							<li>四</li>
+							<li>五</li>
+							<li class="pink">六</li>
+						</ul>
+						<ul class="calendar-day">
+							<li class="old line2"></li>
+							<li class="old line2"></li>
+							<li class="old line2"></li>
+							<li class="line2 show-date " d="1" m="7" y="2018" w="3" today="0" ymd="2018-08-01">
+								<span>1</span>
+							</li>
+							<li class="line2 show-date " d="2" m="7" y="2018" w="4" today="0" ymd="2018-08-02">
+								<span>2</span>
+							</li>
+							<li class="line2 show-date " d="3" m="7" y="2018" w="5" today="0" ymd="2018-08-03">
+								<span>3</span>
+							</li>
+							<li class="line2 show-date " d="4" m="7" y="2018" w="6" today="0" ymd="2018-08-04">
+								<span>4</span>
+							</li>
+							<li class="line2 show-date " d="5" m="7" y="2018" w="0" today="0" ymd="2018-08-05">
+								<span>5</span>
+							</li>
+							<li class="line2 show-date " d="6" m="7" y="2018" w="1" today="0" ymd="2018-08-06">
+								<span>6</span>
+							</li>
+							<li class="line2 show-date " d="7" m="7" y="2018" w="2" today="0" ymd="2018-08-07">
+								<span>7</span>
+							</li>
+							<li class="line2 show-date " d="8" m="7" y="2018" w="3" today="0" ymd="2018-08-08">
+								<span>8</span>
+							</li>
+							<li class="line2 show-date " d="9" m="7" y="2018" w="4" today="0" ymd="2018-08-09">
+								<span>9</span>
+							</li>
+							<li class="line2 show-date " d="10" m="7" y="2018" w="5" today="0" ymd="2018-08-10">
+								<span>10</span>
+							</li>
+							<li class="line2 show-date " d="11" m="7" y="2018" w="6" today="0" ymd="2018-08-11">
+								<span>11</span>
+							</li>
+							<li class="line2 show-date " d="12" m="7" y="2018" w="0" today="0" ymd="2018-08-12">
+								<span>12</span>
+							</li>
+							<li class="line2 show-date " d="13" m="7" y="2018" w="1" today="0" ymd="2018-08-13">
+								<span>13</span>
+							</li>
+							<li class="line2 show-date " d="14" m="7" y="2018" w="2" today="0" ymd="2018-08-14">
+								<span>14</span>
+							</li>
+							<li class="line2 show-date " d="15" m="7" y="2018" w="3" today="0" ymd="2018-08-15">
+								<span>15</span>
+							</li>
+							<li class="line2 show-date " d="16" m="7" y="2018" w="4" today="0" ymd="2018-08-16">
+								<span>16</span>
+							</li>
+							<li class="line2 show-date " d="17" m="7" y="2018" w="5" today="0" ymd="2018-08-17">
+								<span>17</span>
+							</li>
+							<li class="line2 show-date " d="18" m="7" y="2018" w="6" today="0" ymd="2018-08-18">
+								<span>18</span>
+							</li>
+							<li class="line2 show-date " d="19" m="7" y="2018" w="0" today="0" ymd="2018-08-19">
+								<span>19</span>
+							</li>
+							<li class="line2 show-date " d="20" m="7" y="2018" w="1" today="0" ymd="2018-08-20">
+								<span>20</span>
+							</li>
+							<li class="line2 show-date " d="21" m="7" y="2018" w="2" today="0" ymd="2018-08-21">
+								<span>21</span>
+							</li>
+							<li class="line2 show-date " d="22" m="7" y="2018" w="3" today="0" ymd="2018-08-22">
+								<span>22</span>
+							</li>
+							<li class="line2 show-date " d="23" m="7" y="2018" w="4" today="0" ymd="2018-08-23">
+								<span>23</span>
+							</li>
+							<li class="line2 show-date " d="24" m="7" y="2018" w="5" today="0" ymd="2018-08-24">
+								<span>24</span>
+							</li>
+							<li class="line2 show-date " d="25" m="7" y="2018" w="6" today="0" ymd="2018-08-25">
+								<span>25</span>
+							</li>
+							<li class="line2 show-date " d="26" m="7" y="2018" w="0" today="0" ymd="2018-08-26">
+								<span>26</span>
+							</li>
+							<li class="line2 show-date " d="27" m="7" y="2018" w="1" today="0" ymd="2018-08-27">
+								<span>27</span>
+							</li>
+							<li class="line2 show-date " d="28" m="7" y="2018" w="2" today="0" ymd="2018-08-28">
+								<span>28</span>
+							</li>
+							<li class="line2 show-date " d="29" m="7" y="2018" w="3" today="0" ymd="2018-08-29">
+								<span>29</span>
+							</li>
+							<li class="line2 show-date " d="30" m="7" y="2018" w="4" today="0" ymd="2018-08-30">
+								<span>30</span>
+							</li>
+							<li class="line2 show-date " d="31" m="7" y="2018" w="5" today="0" ymd="2018-08-31">
+								<span>31</span>
+							</li>
+							<li class="old line2"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div
+	<!-- ads-room -->
+	<div class="ads-room" id="room">
+		<ul id="room1">
+			<li>
+				<p>满足一家人住宿</p>
+				<span>不论一家老小还是朋友几人</span>
+			</li>
+			<li>
+				<p>家一般的舒适</p>
+				<span>有客厅、有厨房、能洗衣、能做饭</span>
+			</li>
+			<li>
+				<p>比酒店便宜50%</p>
+				<span>一套蚂蚁公寓=2间酒店房间</span>
+			</li>
+			<li>
+				<p>体验当地人生活</p>
+				<span>本地房东帮你规划行程、做向导</span>
+			</li>
+		</ul>
+	</div>	
+	<!-- 热门城市 -->
+	<div class="bigbox">
+		<div class="index-box-tit">
+			<h1 class="mb5 bazhe_city">
+				热门短租城市
+			</h1>
+			<span class="span-p">和你在另一个地方遇见美好</span>
+		</div>
+		<ul class="city">
+			<li class="city-item">
+				<img src="imgsjq/beijing.jpg" alt="">
+				<a href="">北京</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/shanghai.jpg" alt="">
+				<a href="">上海</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/chengdu.jpg" alt="">
+				<a href="">成都</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/sanya.jpg" alt="">
+				<a href="">三亚</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/hangzhou.jpg" alt="">
+				<a href="">杭州</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/guangzhou.jpg" alt="">
+				<a href="">广州</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/xiamen.jpg" alt="">
+				<a href="">厦门</a>
+			</li>
+			<li class="city-item">
+				<img src="imgsjq/chongqing.jpg" alt="">
+				<a href="">重庆</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="热门城市-header.js"></script>
+</body>
+</html>
